@@ -9,9 +9,10 @@ echo 3. Abrir Página de la Universidad Javeriana Cali
 echo 4. Abrir Página Favorita
 echo 5. Reproducir Video Musical Favorito 1
 echo 6. Reproducir Video Musical Favorito 2
-echo 7. Salir
+echo 7. Buscar en Google
+echo 8. Salir
 echo ==================================
-set /p opcion=Elige una opcion (1-7): 
+set /p opcion=Elige una opcion (1-8): 
 
 if %opcion%==1 goto abrirWord
 if %opcion%==2 goto abrirExcel
@@ -28,12 +29,12 @@ goto inicio
 
 :abrirWord
 echo Iniciar Microsoft Word
-start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Word.lnk"
+start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Word.lnk"
 goto inicio
 
 :abrirExcel
 echo Iniciar Microsoft Excel 
-start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk"
+start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk"
 goto inicio
 
 :abrirJaveriana
@@ -65,5 +66,3 @@ goto inicio
 :salir
 echo Saliendo del programa...
 exit
-:salir
-goto inicio
