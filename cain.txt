@@ -1,0 +1,3 @@
+prompt $E[1m$E[32mPortatil$E[0m@$E[32mAcer$E[0m - $E[31m$D$S$T $E[0m - $E[34m$P$G$E[0m
+
+Prompt de cambio en el cmd
